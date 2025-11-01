@@ -58,7 +58,7 @@ A complete DBMS (Database Management System) developed in Python with a medieval
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/fantasy-dbms.git
+git clone https://github.com/adrienJohan/RDBMS-python.git
 cd fantasy-dbms
 
 # Launch the application
