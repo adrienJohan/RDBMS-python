@@ -1,0 +1,100 @@
+{
+  "tables": {
+    "employes": {
+      "columns": {
+        "id": {
+          "type": "INT",
+          "nullable": true,
+          "size": null
+        },
+        "nom": {
+          "type": "VARCHAR",
+          "nullable": false,
+          "size": 50
+        },
+        "age": {
+          "type": "INT",
+          "nullable": true,
+          "size": null
+        },
+        "salaire": {
+          "type": "FLOAT",
+          "nullable": true,
+          "size": null
+        },
+        "actif": {
+          "type": "BOOLEAN",
+          "nullable": true,
+          "size": null
+        },
+        "date_embauche": {
+          "type": "DATE",
+          "nullable": true,
+          "size": null
+        }
+      },
+      "constraints": {
+        "primary_key": "id",
+        "foreign_keys": {},
+        "unique": [
+          "id"
+        ],
+        "not_null": [
+          "id",
+          "nom"
+        ]
+      }
+    },
+    "projets": {
+      "columns": {
+        "id": {
+          "type": "INT",
+          "nullable": true,
+          "size": null
+        },
+        "nom": {
+          "type": "TEXT",
+          "nullable": true,
+          "size": null
+        },
+        "responsable_id": {
+          "type": "INT",
+          "nullable": true,
+          "size": null
+        },
+        "budget": {
+          "type": "FLOAT",
+          "nullable": true,
+          "size": null
+        }
+      },
+      "constraints": {
+        "primary_key": "id",
+        "foreign_keys": {
+          "responsable_id": {
+            "table": "employes",
+            "column": "id"
+          }
+        },
+        "unique": [
+          "id"
+        ],
+        "not_null": [
+          "id"
+        ]
+      }
+    }
+  },
+  "views": {
+    "employes_actifs": {
+      "query": "LOOT * DANS employes AVEC actif = 'true'",
+      "created_by": "admin",
+      "created_at": "2025-11-01T12:47:50.776575"
+    },
+    "projets_avec_responsables": {
+      "query": "LOOT employes.nom, projets.nom, projets.budget DANS employes, projets AVEC employes.id = projets.responsable_id",
+      "created_by": "admin",
+      "created_at": "2025-11-01T12:50:05.818770"
+    }
+  }
+}

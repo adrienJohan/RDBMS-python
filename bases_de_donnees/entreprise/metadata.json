@@ -1,0 +1,90 @@
+{
+  "tables": {
+    "employes": {
+      "columns": {
+        "id": {
+          "type": "INT",
+          "nullable": true,
+          "size": null
+        },
+        "nom": {
+          "type": "VARCHAR",
+          "nullable": false,
+          "size": 50
+        },
+        "salaire": {
+          "type": "FLOAT",
+          "nullable": true,
+          "size": null
+        },
+        "departement": {
+          "type": "TEXT",
+          "nullable": true,
+          "size": null
+        },
+        "date_embauche": {
+          "type": "DATE",
+          "nullable": true,
+          "size": null
+        }
+      },
+      "constraints": {
+        "primary_key": "id",
+        "foreign_keys": {},
+        "unique": [
+          "id"
+        ],
+        "not_null": [
+          "id",
+          "nom"
+        ]
+      }
+    },
+    "departements": {
+      "columns": {
+        "id": {
+          "type": "INT",
+          "nullable": true,
+          "size": null
+        },
+        "nom": {
+          "type": "VARCHAR",
+          "nullable": true,
+          "size": 50
+        },
+        "budget": {
+          "type": "FLOAT",
+          "nullable": true,
+          "size": null
+        }
+      },
+      "constraints": {
+        "primary_key": "id",
+        "foreign_keys": {},
+        "unique": [
+          "id"
+        ],
+        "not_null": [
+          "id"
+        ]
+      }
+    }
+  },
+  "views": {
+    "employes_well_paid": {
+      "query": "LOOT * DANS employes AVEC salaire > '45000'",
+      "created_by": "admin",
+      "created_at": "2025-11-01T11:06:53.980015"
+    },
+    "employes_departement": {
+      "query": "LOOT employes.nom, employes.salaire, departements.nom DANS employes, departements AVEC employes.departement = departements.nom",
+      "created_by": "admin",
+      "created_at": "2025-11-01T11:27:41.561384"
+    },
+    "employes_departements": {
+      "query": "LOOT employes.nom, employes.salaire, departements.nom DANS employes, departements AVEC employes.departement = departements.nom",
+      "created_by": "admin",
+      "created_at": "2025-11-01T11:53:10.530473"
+    }
+  }
+}

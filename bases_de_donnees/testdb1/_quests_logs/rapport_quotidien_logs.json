@@ -1,0 +1,28 @@
+{
+  "executions": [
+    {
+      "id": "exec_20251101_125717",
+      "timestamp": "2025-11-01T12:57:17.914305",
+      "results_count": 2,
+      "results": [
+        {
+          "id": "1",
+          "nom": "Alice",
+          "age": "30",
+          "salaire": "55000.0",
+          "actif": "true",
+          "date_embauche": "2023-01-15"
+        },
+        {
+          "id": "4",
+          "nom": "David",
+          "age": "28",
+          "salaire": "48000.0",
+          "actif": "true",
+          "date_embauche": "2023-03-01"
+        }
+      ],
+      "trigger": "MANUEL"
+    }
+  ]
+}

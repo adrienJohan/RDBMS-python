@@ -1,0 +1,49 @@
+{
+  "admin": {
+    "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "permissions": [
+      "read",
+      "write",
+      "delete",
+      "admin"
+    ]
+  },
+  "bob": {
+    "password": "8d059c3640b97180dd2ee453e20d34ab0cb0f2eccbe87d01915a8e578a202b11",
+    "permissions": [
+      "read",
+      "write",
+      "delete"
+    ]
+  },
+  "alice": {
+    "password": "4e40e8ffe0ee32fa53e139147ed559229a5930f89c2204706fc174beb36210b3",
+    "permissions": [
+      "read",
+      "write",
+      "delete"
+    ]
+  },
+  "user1": {
+    "password": "e6c3da5b206634d7f3f3586d747ffdb36b5c675757b380c6a5fe5c570c714349",
+    "permissions": [
+      "read",
+      "write",
+      "delete"
+    ]
+  },
+  "user2": {
+    "password": "1ba3d16e9881959f8c9a9762854f72c6e6321cdd44358a10a4e939033117eab9",
+    "permissions": [
+      "read"
+    ]
+  },
+  "user3": {
+    "password": "3acb59306ef6e660cf832d1d34c4fba3d88d616f0bb5c2a9e0f82d18ef6fc167",
+    "permissions": [
+      "read",
+      "write",
+      "delete"
+    ]
+  }
+}

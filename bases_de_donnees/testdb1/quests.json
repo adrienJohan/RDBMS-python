@@ -1,0 +1,15 @@
+{
+  "quests": {
+    "rapport_quotidien": {
+      "name": "rapport_quotidien",
+      "query": "LOOT * DANS employes AVEC actif = 'true'",
+      "interval": "1 JOURS",
+      "created_by": "admin",
+      "created_at": "2025-11-01T12:54:27.536389",
+      "last_run": "2025-11-01T12:57:17.914658",
+      "last_results_count": 2,
+      "is_active": true,
+      "total_executions": 1
+    }
+  }
+}

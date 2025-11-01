@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "nom": "Alice Dupont",
+    "salaire": "45000",
+    "departement": "IT",
+    "date_embauche": "2023-01-15"
+  },
+  {
+    "id": "3",
+    "nom": "Charlie Brown",
+    "salaire": "52000",
+    "departement": "IT",
+    "date_embauche": "2022-06-10"
+  },
+  {
+    "id": "4",
+    "nom": "Diana Prince",
+    "salaire": "48000",
+    "departement": "RH",
+    "date_embauche": "2023-11-05"
+  },
+  {
+    "id": "5",
+    "nom": "Eve Laroche",
+    "salaire": "42000",
+    "departement": "IT",
+    "date_embauche": "2024-01-20"
+  }
+]

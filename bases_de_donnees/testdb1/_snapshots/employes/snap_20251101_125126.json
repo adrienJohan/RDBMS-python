@@ -1,0 +1,33 @@
+{
+  "id": "snap_20251101_125126",
+  "description": "Avant modifications majeures",
+  "created_at": "2025-11-01T12:51:26.466541",
+  "created_by": "admin",
+  "data": [
+    {
+      "id": "1",
+      "nom": "Alice",
+      "age": "30",
+      "salaire": "55000.0",
+      "actif": "true",
+      "date_embauche": "2023-01-15"
+    },
+    {
+      "id": "2",
+      "nom": "Bob",
+      "age": "25",
+      "salaire": "45000.0",
+      "actif": "false",
+      "date_embauche": "2023-02-20"
+    },
+    {
+      "id": "4",
+      "nom": "David",
+      "age": "28",
+      "salaire": "48000.0",
+      "actif": "true",
+      "date_embauche": "2023-03-01"
+    }
+  ],
+  "row_count": 3
+}
